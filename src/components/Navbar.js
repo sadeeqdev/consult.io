@@ -8,8 +8,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const HeaderText = styled('h2')({
     color:'#fff',
-    fontWeight:'950',
-    fontSize:'20px'
+    fontWeight:'900',
+    fontSize:'23px'
 })
 
 
@@ -18,6 +18,7 @@ const StyledToolBar = styled(Toolbar)({
     margin:'auto', 
     display:'flex', 
     justifyContent:'space-between',
+    boxShadow:'0px'
 })
 
 const StyledMenuButton = styled(Button)({
@@ -28,6 +29,7 @@ const StyledMenuButton = styled(Button)({
 
 const StyledLoginButton = styled(Button)({
     color:'#333',
+    fontWeight:800,
     backgroundColor:'#fff',
     borderRadius:'20px',
     width:'120px'
@@ -36,7 +38,7 @@ const StyledLoginButton = styled(Button)({
 const Navbar = () => {
   return (
     <div>
-        <AppBar position="sticky" sx={{backgroundColor:'#07163a'}} > 
+        <AppBar position="sticky" sx={{backgroundColor:'#07163a', boxShadow:'none'}} > 
                 <StyledToolBar>
                     <HeaderText>Consult.io</HeaderText>
                     <Box direction="row" sx={{display:{xs:'none', sm:'block'}}}>
