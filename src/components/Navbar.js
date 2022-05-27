@@ -32,15 +32,16 @@ const StyledLoginButton = styled(Button)({
     fontWeight:800,
     backgroundColor:'#fff',
     borderRadius:'20px',
-    width:'120px'
+    width:'120px',
+    '&:hover':{backgroundColor:'#2f53a5', color:'white'}
 })
 
 const Navbar = () => {
   return (
     <div>
-        <AppBar position="sticky" sx={{backgroundColor:'#07163a', boxShadow:'none'}} > 
+        <AppBar position="fixed" sx={{backgroundColor:'#07163a', boxShadow:'none'}} > 
                 <StyledToolBar>
-                    <HeaderText>Consult.io</HeaderText>
+                    <HeaderText>Consulta.io</HeaderText>
                     <Box direction="row" sx={{display:{xs:'none', sm:'block'}}}>
                         <StyledMenuButton variant="body1">
                             Home
