@@ -12,9 +12,9 @@ const BasicBar = () => {
         width:'80%', 
         margin:'auto', 
         textAlign:'center', 
-        marginTop:'80px',
+        marginTop:'20px',
         [theme.breakpoints.down('sm')]:{
-            marginTop:'150px',
+            marginTop:'30px',
             marginRight:'130px'
         }
     }))
