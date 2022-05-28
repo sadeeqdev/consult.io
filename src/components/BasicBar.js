@@ -8,7 +8,7 @@ const BasicBar = () => {
 
     const StyleContainer = styled(Grid)(({theme})=>({
         display:'flex', 
-        justifyContent:'space-between', 
+        justifyContent:'space-around', 
         width:'80%', 
         margin:'auto', 
         textAlign:'center', 
@@ -48,7 +48,6 @@ const BasicBar = () => {
 
         }
     }))
-
 
   return (
     <StyleContainer container>

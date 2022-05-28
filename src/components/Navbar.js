@@ -39,7 +39,7 @@ const StyledLoginButton = styled(Button)({
 const Navbar = () => {
   return (
     <div>
-        <AppBar position="fixed" sx={{backgroundColor:'#07163a', boxShadow:'none'}} > 
+        <AppBar position="fixed" sx={{backgroundColor:'#07163a', boxShadow:'none', position:'fixed'}} > 
                 <StyledToolBar>
                     <HeaderText>Consulta.io</HeaderText>
                     <Box direction="row" sx={{display:{xs:'none', sm:'block'}}}>

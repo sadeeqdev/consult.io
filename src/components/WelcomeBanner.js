@@ -30,7 +30,7 @@ const WelcomeBanner = () => {
 
     const StyledBannerHeader = styled('div')(({theme})=>({
         fontWeight:400,
-        fontSize:'45px',
+        fontSize:'55px',
         paddingTop:'100px',
         [theme.breakpoints.down('sm')]:{
             width:'100%',
@@ -41,7 +41,11 @@ const WelcomeBanner = () => {
             backgroundSize: '150% 370px',
             backgroundPosition:'center top',
             backgroundRepeat:'no-repeat',
-            boxShadow:'5px'
+            boxShadow:'5px',
+        },
+        [theme.breakpoints.down('lg')]:{
+            fontSize:'40px',
+            textShadow: '2px 2px #444444',
         }
     }))
 
@@ -66,6 +70,25 @@ const WelcomeBanner = () => {
 
     })
 
+    const GridCircle = styled('div')(({theme})=>({
+        width:'250px',
+        height:'250px',
+        borderRadius:'250px',
+        border: '15px solid #fff',
+        marginTop:'-230px',
+        marginLeft:'-185px',
+        display:{sm:'none'},
+        [theme.breakpoints.down('sm')]:{
+            display:'none'
+        },
+        [theme.breakpoints.down('lg')]:{
+            marginTop:'-270px',
+            width:'230px',
+            height:'230px',
+            borderRadius:'230px',
+            marginLeft:'-195px',
+    }
+    }))
 
 
   return (
@@ -81,6 +104,9 @@ const WelcomeBanner = () => {
                 Ask A Doctor Online
             </StyledQuoteButton>
         </StyledBannerDiv>
+        <GridCircle>
+
+        </GridCircle>
     </StyledBanner>
   )
 }
