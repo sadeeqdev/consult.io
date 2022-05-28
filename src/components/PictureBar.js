@@ -6,9 +6,9 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 const PictureBar = () => {
 
     const StyleGridContainer = styled(Grid)(({theme})=>({
-        height:'500px',
+        height:'auto',
         width:'70%',
-        margin:'100px auto',
+        margin:'200px auto',
         display: 'flex',
         justifyContent:'space-between',
         [theme.breakpoints.down('xl')]:{
@@ -17,7 +17,7 @@ const PictureBar = () => {
         },
         [theme.breakpoints.down('sm')]:{
             width:"90%",
-            marginTop:'100px'
+            margin:'100px auto 40px auto'
         }
     }))
 
@@ -86,7 +86,7 @@ const PictureBar = () => {
             marginTop:'30px',
         },
         [theme.breakpoints.down('sm')]:{
-            marginTop:'20px',
+            margin:'20px auto',
         }
 
     }))

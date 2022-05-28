@@ -1,12 +1,12 @@
 import { Button, Grid } from "@mui/material"
 import { styled } from "@mui/system"
-import BannerImg from '../assets/doc_img_8.jpg';
+import BannerImg from '../assets/docimg_7.jpg';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const PictureBarBottom = () => {
 
     const StyleGridContainer = styled(Grid)(({theme})=>({
-        height:'500px',
+        height:'auto',
         width:'70%',
         margin:'100px auto',
         display: 'flex',
@@ -27,7 +27,7 @@ const PictureBarBottom = () => {
         borderRadius: '10px 40%',
         backgroundImage: `url(${BannerImg})`,
         backgroundSize: '800px 500px',
-        backgroundPosition:'center right',
+        backgroundPosition:'center',
         marginTop: '0px',
         backgroundRepeat:'no-repeat',
         [theme.breakpoints.down('xl')]:{
@@ -98,7 +98,7 @@ const PictureBarBottom = () => {
         </Grid>
         <Grid item sm={6} xs={12}>
             <StyledHeaderText>
-                Success Will Come If You Think Freely Without Thinking About What To Do
+                Frequently Asked Questions
             </StyledHeaderText>
             <StyledBodyText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."

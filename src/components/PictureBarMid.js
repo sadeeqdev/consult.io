@@ -1,6 +1,6 @@
 import { Button, Grid } from "@mui/material"
 import { styled } from "@mui/system"
-import BannerImg from '../assets/doc_img_8.jpg';
+import BannerImg from '../assets/docimg_3.jpg';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const PictureBarMid = () => {
@@ -17,7 +17,7 @@ const PictureBarMid = () => {
         },
         [theme.breakpoints.down('sm')]:{
             width:"90%",
-            marginTop:'150px'
+            marginTop:'0px'
         }
     }))
 
@@ -27,7 +27,7 @@ const PictureBarMid = () => {
         borderRadius: '40% 10px',
         backgroundImage: `url(${BannerImg})`,
         backgroundSize: '800px 500px',
-        backgroundPosition:'center right',
+        backgroundPosition:'center',
         marginTop: '0px',
         backgroundRepeat:'no-repeat',
         [theme.breakpoints.down('xl')]:{
@@ -73,7 +73,7 @@ const PictureBarMid = () => {
     const StyledBodyButton = styled(Button)(({theme})=>({
         width:'80px',
         height:'80px',
-        borderRadius:'10px',
+        borderRadius:'20px',
         backgroundColor:'#07163a',
         color: '#fff',
         fontWeight: '900',

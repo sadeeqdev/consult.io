@@ -1,5 +1,7 @@
 import BasicBar from "../components/BasicBar";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Partners from "../components/Partners";
 import PictureBar from "../components/PictureBar";
 import PictureBarBottom from "../components/PictureBarBottom";
 import PictureBarMid from "../components/PictureBarMid";
@@ -17,6 +19,8 @@ const Home = () => {
         <PictureBar/>
         <PictureBarMid/>
         <PictureBarBottom/>
+        <Partners/>
+        <Footer/>
     </div>
   )
 }
