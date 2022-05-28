@@ -4,15 +4,19 @@ import { styled } from "@mui/system"
 
 const Partners = () => {
 
-    const StyledContainer = styled(Grid)({
+    const StyledContainer = styled(Grid)(({theme}) => ({
         width:'60%', 
         margin:'auto',
         display:"flex",
-        justifyContent:'space-evenly'
-    })
+        justifyContent:'space-around',
+        textAlign:'center',
+        [theme.breakpoints.down('sm')]:{
+            width:"90%",
+        }
+    }))
 
   return (
-    <StyledContainer direction="row">
+    <StyledContainer container direction="row">
         <Grid item sm={2} xs={4}><Google sx={{fontSize:'40px'}}/></Grid>
         <Grid item sm={2} xs={4}><Facebook sx={{fontSize:'40px'}}></Facebook></Grid>
         <Grid item sm={2} xs={4}><Twitter sx={{fontSize:'40px'}}></Twitter></Grid>
