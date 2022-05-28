@@ -39,7 +39,10 @@ const PictureBar = () => {
             height:'300px',
             backgroundSize: '120% 100%',
             borderRadius: '10px 50%',
-        }
+        },
+        [theme.breakpoints.down('lg')]:{
+            width:"100%",
+        },
     }))
 
     const StyledHeaderText = styled('div')(({theme}) =>({
@@ -86,7 +89,9 @@ const PictureBar = () => {
             marginTop:'30px',
         },
         [theme.breakpoints.down('sm')]:{
-            margin:'20px auto',
+            marginTop:'20px',
+            marginLeft:'50px',
+            align:'center'
         }
 
     }))

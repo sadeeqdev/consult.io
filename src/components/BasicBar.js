@@ -43,8 +43,8 @@ const BasicBar = () => {
         marginTop:'170px',
         marginLeft:'100px',
         [theme.breakpoints.down('sm')]:{
-            marginLeft:'100px',
-            marginTop:'150px',
+            marginLeft:'60px',
+            marginTop:'160px',
 
         }
     }))

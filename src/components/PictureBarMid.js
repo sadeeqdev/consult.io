@@ -17,7 +17,8 @@ const PictureBarMid = () => {
         },
         [theme.breakpoints.down('sm')]:{
             width:"90%",
-            marginTop:'0px'
+            marginTop:'0px',
+            marginBottom:'500px',
         }
     }))
 
@@ -31,7 +32,7 @@ const PictureBarMid = () => {
         marginTop: '0px',
         backgroundRepeat:'no-repeat',
         [theme.breakpoints.down('xl')]:{
-            backgroundPosition:'center',
+            backgroundPosition:'center top',
             height:'400px'
         },
         [theme.breakpoints.down('sm')]:{
@@ -40,7 +41,11 @@ const PictureBarMid = () => {
             backgroundSize: '120% 100%',
             borderRadius: '10px 50%',
             marginTop: '50px',
-        }
+        },
+        [theme.breakpoints.down('lg')]:{
+            width:"100%",
+            backgroundPosition:'center top',
+        },
     }))
 
     const StyledHeaderText = styled('div')(({theme}) =>({
@@ -86,10 +91,12 @@ const PictureBarMid = () => {
             marginTop: '15px',
         },
         [theme.breakpoints.down('sm')]:{
-            width:'20px',
-            height:'30px',
+            width:'10px',
+            fontSize:'10px',
+            height:'60px',
             borderRadius:'10px',
-            marginTop: '15px'
+            marginTop: '15px',
+            padding:'   '
         }
 
     }))

@@ -1,6 +1,5 @@
 import { Button } from "@mui/material"
 import { styled } from "@mui/system"
-import BannerImg from '../assets/docimg_4.jpg';
 
 const WelcomeBanner = () => {
 
@@ -12,7 +11,7 @@ const WelcomeBanner = () => {
         textAlign:'center',
         [theme.breakpoints.down('sm')]:{
             width: '100%',
-            height:'auto',
+            height:'450px',
             paddingBottom:'30px',
         }
     }))
@@ -33,19 +32,15 @@ const WelcomeBanner = () => {
         fontSize:'55px',
         paddingTop:'100px',
         [theme.breakpoints.down('sm')]:{
-            width:'100%',
-            height:'300px',
-            fontSize:'30px',
+            width:'90%',
+            height:'auto',
+            margin:'auto',  
+            fontSize:'px',
             color:'#fff',
-            backgroundImage: `url(${BannerImg})`,
-            backgroundSize: '150% 370px',
-            backgroundPosition:'center top',
-            backgroundRepeat:'no-repeat',
-            boxShadow:'5px',
         },
         [theme.breakpoints.down('lg')]:{
-            fontSize:'40px',
-            textShadow: '2px 2px #444444',
+            fontSize:'30px',
+            textShadow: '2px 2px #222222',
         }
     }))
 
@@ -54,7 +49,10 @@ const WelcomeBanner = () => {
         lineHeight: '30px',
         paddingTop:'30px',
         [theme.breakpoints.down('sm')]:{
-            paddingTop:'0px'
+            paddingTop:'20px',
+            fontSize:'12px',
+            lineHeight: '20px',
+            textShadow: '2px 2px #222222',
         }
     }))
 
@@ -77,9 +75,14 @@ const WelcomeBanner = () => {
         border: '15px solid #fff',
         marginTop:'-230px',
         marginLeft:'-185px',
-        display:{sm:'none'},
         [theme.breakpoints.down('sm')]:{
-            display:'none'
+            width:'40px',
+            height:'40px',
+            borderRadius:'40px',
+            border: '5px solid #afafaf',
+            marginTop:'30px',
+            marginLeft:'-40px',
+            zIndex:'-99'
         },
         [theme.breakpoints.down('lg')]:{
             marginTop:'-270px',
@@ -104,9 +107,7 @@ const WelcomeBanner = () => {
                 Ask A Doctor Online
             </StyledQuoteButton>
         </StyledBannerDiv>
-        <GridCircle>
-
-        </GridCircle>
+        <GridCircle/>
     </StyledBanner>
   )
 }

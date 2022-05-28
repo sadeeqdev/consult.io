@@ -13,12 +13,14 @@ const PictureBarBottom = () => {
         justifyContent:'space-between',
         [theme.breakpoints.down('xl')]:{
             width:"80%",
-            marginTop:'100px'
+            marginTop:'-200px'
         },
         [theme.breakpoints.down('sm')]:{
             width:"90%",
-            marginTop:'400px'
-        }
+        },
+        [theme.breakpoints.down('lg')]:{
+            marginTop:'-100px'
+        },
     }))
 
     const StyleImageBar = styled('div')(({theme}) => ({
@@ -32,14 +34,17 @@ const PictureBarBottom = () => {
         backgroundRepeat:'no-repeat',
         [theme.breakpoints.down('xl')]:{
             backgroundPosition:'center',
-            height:'400px'
+            height:'400px',
         },
         [theme.breakpoints.down('sm')]:{
             width:"100%",
             height:'300px',
             backgroundSize: '120% 100%',
             borderRadius: '10px 50%',
-        }
+        },
+        [theme.breakpoints.down('lg')]:{
+            width:"100%",
+        },
     }))
 
     const StyledHeaderText = styled('div')(({theme}) =>({
