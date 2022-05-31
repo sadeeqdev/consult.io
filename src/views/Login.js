@@ -1,7 +1,7 @@
 import { Button, Grid, TextField } from "@mui/material"
 import { styled } from "@mui/system"
-import BannerImg from '../assets/loginpng_3.png';
-import MobileBannerImg from '../assets/loginpng_3.png';
+import BannerImg from '../assets/loginpng_5.png';
+import MobileBannerImg from '../assets/loginpng_5.png';
 
 const Login = () => {
 
@@ -62,7 +62,7 @@ const Login = () => {
         marginTop: '40px',
         height:'500px',
         backgroundImage: `url(${BannerImg})`,
-        backgroundSize: '550px 500px',
+        backgroundSize: '650px 450px',
         backgroundPosition:'center',
         backgroundRepeat:'no-repeat',
         [theme.breakpoints.down('xl')]:{
@@ -71,7 +71,7 @@ const Login = () => {
         },
         [theme.breakpoints.down('lg')]:{
             height:'300px',
-            backgroundSize: '300px 270px',
+            backgroundSize: '300px 250px',
             marginTop: '0px',
         },
         [theme.breakpoints.down('md')]:{
@@ -143,6 +143,7 @@ const Login = () => {
         height:'50px',
         margin:'30px 0',
         fontWeight:600,
+        '&:hover':{backgroundColor:'#2f53a5', color:'white'},
         [theme.breakpoints.down('md')]:{
             width:'100%',
         },

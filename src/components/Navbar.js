@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 import { Box } from '@mui/system';
 import { Button, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { useNavigate } from 'react-router';
 
 const HeaderText = styled('h2')({
     color:'#fff',
@@ -37,6 +38,9 @@ const StyledLoginButton = styled(Button)({
 })
 
 const Navbar = () => {
+
+    const navigate = useNavigate()
+
   return (
     <div>
         <AppBar position="fixed" sx={{backgroundColor:'#07163a', boxShadow:'none', position:'fixed'}} > 
@@ -60,7 +64,7 @@ const Navbar = () => {
                         </StyledMenuButton>
                     </Box>
                     <Box >
-                        <StyledLoginButton sx={{display:{xs:'none', sm:'block'}}}>
+                        <StyledLoginButton onClick={() => navigate("/login")} sx={{display:{xs:'none', sm:'block'}}}>
                             Log in
                         </StyledLoginButton>
                         <IconButton sx={{display:{xs:'block', sm:'none', color:'white'}}}>
