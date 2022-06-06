@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogWelcomeBanner from '../../components/Blog/BlogBanner'
 import PostRow from '../../components/Blog/PostRow'
+import SubscribeBox from '../../components/Blog/SubscribeBox'
 import Navbar from '../../components/Navbar'
 
 const Blog = () => {
@@ -9,6 +10,7 @@ const Blog = () => {
         <Navbar/>
         <BlogWelcomeBanner/>
         <PostRow/>
+        <SubscribeBox/>
     </div>
   )
 }

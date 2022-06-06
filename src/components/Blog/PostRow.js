@@ -111,6 +111,56 @@ const PostRow = () => {
                     </StyledBannerText>
                 </Grid>
             </Grid>
+            <Grid container spacing={7} direction="row">
+                <Grid item md={3} xs={12}>
+                    <StyledMainImage src={SideImg4}/>
+                    <StyledDateText>
+                        17 Febuary 2021
+                    </StyledDateText>
+                    <StyledBannerHeaderText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </StyledBannerHeaderText>
+                    <StyledBannerText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
+                    </StyledBannerText>
+                </Grid>
+                <Grid item md={3} xs={12}>
+                <StyledMainImage src={SideImg3}/>
+                    <StyledDateText>
+                        17 Febuary 2021
+                    </StyledDateText>
+                    <StyledBannerHeaderText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </StyledBannerHeaderText>
+                    <StyledBannerText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
+                    </StyledBannerText>
+                </Grid>
+                <Grid item md={3} xs={12}>
+                <StyledMainImage src={SideImg2}/>
+                    <StyledDateText>
+                        17 Febuary 2021
+                    </StyledDateText>
+                    <StyledBannerHeaderText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </StyledBannerHeaderText>
+                    <StyledBannerText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
+                    </StyledBannerText>
+                </Grid>
+                <Grid item md={3} xs={12}>
+                <StyledMainImage src={SideImg1}/>
+                    <StyledDateText>
+                        17 Febuary 2021
+                    </StyledDateText>
+                    <StyledBannerHeaderText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </StyledBannerHeaderText>
+                    <StyledBannerText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
+                    </StyledBannerText>
+                </Grid>
+            </Grid>
         </StyledPostDiv>
     )
 }
