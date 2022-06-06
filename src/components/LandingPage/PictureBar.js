@@ -1,26 +1,24 @@
 import { Button, Grid } from "@mui/material"
 import { styled } from "@mui/system"
-import BannerImg from '../assets/docimg_7.jpg';
+import BannerImg from '../../assets/doc_img_8.jpg';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
-const PictureBarBottom = () => {
+const PictureBar = () => {
 
     const StyleGridContainer = styled(Grid)(({theme})=>({
         height:'auto',
         width:'70%',
-        margin:'100px auto',
+        margin:'200px auto',
         display: 'flex',
         justifyContent:'space-between',
         [theme.breakpoints.down('xl')]:{
             width:"80%",
-            marginTop:'-200px'
+            marginTop:'100px'
         },
         [theme.breakpoints.down('sm')]:{
             width:"90%",
-        },
-        [theme.breakpoints.down('lg')]:{
-            marginTop:'-100px'
-        },
+            margin:'100px auto 40px auto'
+        }
     }))
 
     const StyleImageBar = styled('div')(({theme}) => ({
@@ -29,12 +27,12 @@ const PictureBarBottom = () => {
         borderRadius: '10px 40%',
         backgroundImage: `url(${BannerImg})`,
         backgroundSize: '800px 500px',
-        backgroundPosition:'center',
+        backgroundPosition:'center right',
         marginTop: '0px',
         backgroundRepeat:'no-repeat',
         [theme.breakpoints.down('xl')]:{
             backgroundPosition:'center',
-            height:'400px',
+            height:'400px'
         },
         [theme.breakpoints.down('sm')]:{
             width:"100%",
@@ -92,6 +90,8 @@ const PictureBarBottom = () => {
         },
         [theme.breakpoints.down('sm')]:{
             marginTop:'20px',
+            marginLeft:'50px',
+            align:'center'
         }
 
     }))
@@ -103,7 +103,7 @@ const PictureBarBottom = () => {
         </Grid>
         <Grid item sm={6} xs={12}>
             <StyledHeaderText>
-                Frequently Asked Questions
+                Success Will Come If You Think Freely Without Thinking About What To Do
             </StyledHeaderText>
             <StyledBodyText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
@@ -117,4 +117,4 @@ const PictureBarBottom = () => {
   )
 }
 
-export default PictureBarBottom
+export default PictureBar

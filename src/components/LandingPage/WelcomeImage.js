@@ -1,5 +1,5 @@
 import { styled } from "@mui/system"
-import BannerImg from '../assets/docimg_4.jpg';
+import BannerImg from '../../assets/docimg_4.jpg';
 
 const WelcomeImage = () => {
 

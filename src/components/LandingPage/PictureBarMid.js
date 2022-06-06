@@ -1,6 +1,6 @@
 import { Button, Grid } from "@mui/material"
 import { styled } from "@mui/system"
-import BannerImg from '../assets/docimg_3.jpg';
+import BannerImg from '../../assets/docimg_3.jpg';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const PictureBarMid = () => {
