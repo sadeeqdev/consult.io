@@ -9,6 +9,7 @@ const Footer = () => {
         backgroundColor:'#07163a',
         color:'white',
         margin:'auto',
+        bottom:'0',
         marginTop:'50px',
         [theme.breakpoints.down('md')]:{
             height:'auto',

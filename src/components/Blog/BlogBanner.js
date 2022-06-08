@@ -21,7 +21,7 @@ const BlogWelcomeBanner = () => {
 
     const StyledBannerDiv = styled(Grid)(({theme})=>({
         width: '80%',
-        margin: '70px auto',
+        margin: '0px auto',
         [theme.breakpoints.down('sm')]:{
             width:'90%',
         },
@@ -143,10 +143,22 @@ const BlogWelcomeBanner = () => {
     }
     }))
 
+    const StyledMainTitle = styled('div')(({theme}) =>({
+        fontSize:'40px',
+        textAlign:'justify',
+        color:"#fff",
+        fontWeight:550,
+        padding:'30px 0',
+        width:'70%',
+        marginTop: '40px',
+        margin:'40px auto 0 auto'
+    }))
+
 
   return (
     <StyledBanner>
-x        <StyledBannerDiv container spacing={0} direction="row">
+        <StyledMainTitle>Latest Articles From Consulta.io</StyledMainTitle>
+        <StyledBannerDiv container spacing={0} direction="row">
             <StyledGrid item md={5.5} xs={12}>
                 <StyledMainImage src={MainImg}/>
                 <StyledDateText>

@@ -5,7 +5,7 @@ import SideImg2 from '../../assets/docimg_5.jpg';
 import SideImg3 from '../../assets/doc_img_8.jpg';
 import SideImg4 from '../../assets/docimg_7.jpg';
 
-const PostRow = () => {
+const RandomPosts = () => {
 
     const StyledPostDiv = styled(Grid)(({theme})=>({
         width: '80%',
@@ -44,9 +44,8 @@ const PostRow = () => {
         fontWeight:550,
         padding:'2px 0',
         lineHeight:'30px',
-        textAlign:'justify',
         [theme.breakpoints.down('sm')]:{
-            fontSize:'18px',
+           
         }
     }))
 
@@ -56,14 +55,22 @@ const PostRow = () => {
         padding:'10px 0',
         lineHeight:'25px',
         [theme.breakpoints.down('sm')]:{
-           display:'none'
+           
         }
+    }))
+
+    const StyledMainTitle = styled('div')(({theme}) =>({
+        fontSize:'35px',
+        color:"#333333",
+        fontWeight:550,
+        margin:'30px 0',
     }))
 
     return(
         <StyledPostDiv>
+            <StyledMainTitle>News from the other side</StyledMainTitle>
             <Grid container spacing={7} direction="row">
-                <Grid item md={3} xs={6}>
+                <Grid item md={4} xs={12}>
                     <StyledMainImage src={SideImg4}/>
                     <StyledDateText>
                         17 Febuary 2021
@@ -75,7 +82,7 @@ const PostRow = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
                     </StyledBannerText>
                 </Grid>
-                <Grid item md={3} xs={6}>
+                <Grid item md={4} xs={12}>
                 <StyledMainImage src={SideImg3}/>
                     <StyledDateText>
                         17 Febuary 2021
@@ -87,20 +94,8 @@ const PostRow = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
                     </StyledBannerText>
                 </Grid>
-                <Grid item md={3} xs={6}>
+                <Grid item md={4} xs={12}>
                 <StyledMainImage src={SideImg2}/>
-                    <StyledDateText>
-                        17 Febuary 2021
-                    </StyledDateText>
-                    <StyledBannerHeaderText>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </StyledBannerHeaderText>
-                    <StyledBannerText>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
-                    </StyledBannerText>
-                </Grid>
-                <Grid item md={3} xs={6}>
-                <StyledMainImage src={SideImg1}/>
                     <StyledDateText>
                         17 Febuary 2021
                     </StyledDateText>
@@ -113,7 +108,7 @@ const PostRow = () => {
                 </Grid>
             </Grid>
             <Grid container spacing={7} direction="row">
-                <Grid item md={3} xs={6}>
+                <Grid item md={4} xs={12}>
                     <StyledMainImage src={SideImg4}/>
                     <StyledDateText>
                         17 Febuary 2021
@@ -125,7 +120,7 @@ const PostRow = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
                     </StyledBannerText>
                 </Grid>
-                <Grid item md={3} xs={6}>
+                <Grid item md={4} xs={12}>
                 <StyledMainImage src={SideImg3}/>
                     <StyledDateText>
                         17 Febuary 2021
@@ -137,20 +132,8 @@ const PostRow = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
                     </StyledBannerText>
                 </Grid>
-                <Grid item md={3} xs={6}>
+                <Grid item md={4} xs={12}>
                 <StyledMainImage src={SideImg2}/>
-                    <StyledDateText>
-                        17 Febuary 2021
-                    </StyledDateText>
-                    <StyledBannerHeaderText>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </StyledBannerHeaderText>
-                    <StyledBannerText>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
-                    </StyledBannerText>
-                </Grid>
-                <Grid item md={3} xs={6}>
-                <StyledMainImage src={SideImg1}/>
                     <StyledDateText>
                         17 Febuary 2021
                     </StyledDateText>
@@ -166,4 +149,4 @@ const PostRow = () => {
     )
 }
 
-export default PostRow
+export default RandomPosts
