@@ -129,7 +129,7 @@ const Webinars = () => {
                         </Grid>
                     </StyledGridItem>
                 </StyledGrid>
-                <StyledGrid md={0.5}>
+                <StyledGrid item md={0.5}>
                 </StyledGrid>
                 <StyledGrid item md={5.75} xs={12}>
                     <StyledGridItem container>

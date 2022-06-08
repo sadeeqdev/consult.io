@@ -46,7 +46,7 @@ const Navbar = () => {
         <AppBar position="fixed" sx={{backgroundColor:'#07163a', boxShadow:'none', position:'fixed'}} > 
                 <StyledToolBar>
                     <HeaderText>Consulta.io</HeaderText>
-                    <Box direction="row" sx={{display:{xs:'none', sm:'block'}}}>
+                    <Box direction="row" sx={{display:{xs:'none', md:'block'}}}>
                         <StyledMenuButton variant="body1">
                             Home
                         </StyledMenuButton>
@@ -64,10 +64,10 @@ const Navbar = () => {
                         </StyledMenuButton>
                     </Box>
                     <Box >
-                        <StyledLoginButton onClick={() => navigate("/login")} sx={{display:{xs:'none', sm:'block'}}}>
+                        <StyledLoginButton onClick={() => navigate("/login")} sx={{display:{xs:'none', md:'block'}}}>
                             Log in
                         </StyledLoginButton>
-                        <IconButton sx={{display:{xs:'block', sm:'none', color:'white'}}}>
+                        <IconButton sx={{display:{xs:'block', md:'none', color:'white'}}}>
                           <MenuIcon/>
                         </IconButton>
                     </Box>

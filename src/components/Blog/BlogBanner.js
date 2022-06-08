@@ -171,7 +171,7 @@ const BlogWelcomeBanner = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
                 </StyledBannerText>
             </StyledGrid>
-            <StyledGrid md={0.5}>
+            <StyledGrid item md={0.5}>
 
             </StyledGrid>
             <StyledGrid item md={6} xs={12}>
