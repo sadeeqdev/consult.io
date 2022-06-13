@@ -62,8 +62,6 @@ const ContactUs = () => {
         },
     }))
 
-  
-
   return (
     <div>
         <Navbar/>
