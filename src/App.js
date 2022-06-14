@@ -8,6 +8,7 @@ import ContactUs from './views/ContactUs';
 import Home from './views/Home'
 import Login from './views/Login'
 import QuestionAnswers from './views/QuestionAnswers';
+import Services from './views/Services';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" element={<AboutUs/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
           <Route path="/faq" element={<QuestionAnswers/>}/>
+          <Route path="/services" element={<Services/>}/>
         </Routes>
       </BrowserRouter>
     </div>
