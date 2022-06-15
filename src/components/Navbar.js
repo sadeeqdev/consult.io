@@ -47,19 +47,19 @@ const Navbar = () => {
                 <StyledToolBar>
                     <HeaderText>Consulta.io</HeaderText>
                     <Box direction="row" sx={{display:{xs:'none', md:'block'}}}>
-                        <StyledMenuButton variant="body1">
+                        <StyledMenuButton onClick={() => navigate("/")} variant="body1">
                             Home
                         </StyledMenuButton>
-                        <StyledMenuButton variant="body1">
+                        <StyledMenuButton  onClick={() => navigate("/services")} variant="body1">
                             Services
                         </StyledMenuButton>
-                        <StyledMenuButton variant="body1">
+                        <StyledMenuButton onClick={() => navigate("/faq")} variant="body1">
                             Question & Answer 
                         </StyledMenuButton>
-                        <StyledMenuButton variant="body1">
+                        <StyledMenuButton onClick={() => navigate("/consult")} variant="body1">
                             Consultation
                         </StyledMenuButton>
-                        <StyledMenuButton variant="body1">
+                        <StyledMenuButton onClick={() => navigate("/blog")} variant="body1">
                             Articles
                         </StyledMenuButton>
                     </Box>

@@ -17,7 +17,7 @@ const QuestionAnswers = () => {
   ]
 
   const StyledTitleBlock = styled('div')(({theme}) => ({
-    width:'50%',
+    width:'55%',
     margin:'auto',
     marginTop:'100px',
     fontSize:'35px',
@@ -32,8 +32,8 @@ const QuestionAnswers = () => {
             Popular Asked Questions
           </StyledTitleBlock>
           <div>
-            {questions.map(question => (
-              <QuestionBlock question={question.question} answer={question.answer}/>
+            {questions.map((question, index) => (
+              <QuestionBlock key={index} question={question.question} answer={question.answer}/>
             ))}
           </div>
         <Footer/>
