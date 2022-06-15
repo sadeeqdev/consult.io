@@ -1,7 +1,9 @@
 import { Button, Grid } from "@mui/material"
 import { styled } from "@mui/system"
+import { useNavigate } from "react-router-dom"
 
 const Footer = () => {
+    const navigate = useNavigate()
 
     const StyledFooter = styled(Grid)(({theme}) => ({
         width:'100%',
@@ -76,19 +78,19 @@ const Footer = () => {
               <StyledGridHeader>
                   Our Services
               </StyledGridHeader>
-              <StyledGridButton>Consultation</StyledGridButton>
-              <StyledGridButton>Therapy</StyledGridButton>
-              <StyledGridButton>Quick Response</StyledGridButton>
-              <StyledGridButton>Guidance</StyledGridButton>
+              <StyledGridButton onClick={() => navigate('/consult')}>Consultation</StyledGridButton>
+              <StyledGridButton onClick={() => navigate('/services')}>Therapy</StyledGridButton>
+              <StyledGridButton onClick={() => navigate('/contact')}>Quick Response</StyledGridButton>
+              <StyledGridButton onClick={() => navigate('/about')}>Guidance</StyledGridButton>
           </Grid>
           <Grid item sm={3} xs={6}>
                 <StyledGridHeader>
                   Terms & Condition
               </StyledGridHeader>
-              <StyledGridButton>Service</StyledGridButton>
-              <StyledGridButton>Tips & Jesks</StyledGridButton>
-              <StyledGridButton>Security</StyledGridButton>
-              <StyledGridButton>FindOut</StyledGridButton>
+              <StyledGridButton onClick={() => navigate('/services')}>Service</StyledGridButton>
+              <StyledGridButton onClick={() => navigate('/faq')}>Tips & Jesks</StyledGridButton>
+              <StyledGridButton onClick={() => navigate('/contact')}>Security</StyledGridButton>
+              <StyledGridButton onClick={() => navigate('/about')}>FindOut</StyledGridButton>
               
           </Grid>
           <Grid item sm={3} xs={6}>

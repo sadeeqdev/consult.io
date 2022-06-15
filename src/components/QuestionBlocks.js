@@ -5,7 +5,6 @@ const QuestionBlock = ({question, answer}) => {
 
     const StyledMainBody = styled('div')(({theme}) => ({
         marginTop:'80px',
-        width:'55%',
         margin:'30px auto',
         boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)',
         fontSize:'24px',

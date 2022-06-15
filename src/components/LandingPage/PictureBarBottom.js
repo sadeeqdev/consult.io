@@ -2,8 +2,10 @@ import { Button, Grid } from "@mui/material"
 import { styled } from "@mui/system"
 import BannerImg from '../../assets/docimg_7.jpg';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { useNavigate } from "react-router-dom";
 
 const PictureBarBottom = () => {
+    const navigate = useNavigate()
 
     const StyleGridContainer = styled(Grid)(({theme})=>({
         height:'auto',
@@ -13,13 +15,13 @@ const PictureBarBottom = () => {
         justifyContent:'space-between',
         [theme.breakpoints.down('xl')]:{
             width:"80%",
-            marginTop:'-200px'
+            marginTop:'-140px'
         },
         [theme.breakpoints.down('sm')]:{
             width:"90%",
         },
         [theme.breakpoints.down('lg')]:{
-            marginTop:'-100px'
+            marginTop:'-50px'
         },
     }))
 
@@ -106,9 +108,10 @@ const PictureBarBottom = () => {
                 Frequently Asked Questions
             </StyledHeaderText>
             <StyledBodyText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
+                 Consulta.io has a prominent navbar at the top of its FAQ page. They even have calls to action, encouraging customers to search and find answers to their questions. This is helpful for customers who are looking for a fast answer without having to scroll through dozens of questions.
+                <br/><br/>This is especially important whenever you announce a new product feature or update.
             </StyledBodyText>
-            <StyledBodyButton>
+            <StyledBodyButton onClick={() => {navigate('/faq')}}>
                 See More FAQs 
                 <ArrowRightAltIcon sx={{color:'white'}}/>
             </StyledBodyButton>

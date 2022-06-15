@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from "./components/ScrollTop";
 import AboutUs from './views/AboutUs';
 import Article from './views/blog/Article';
 import Blog from './views/blog/Blog';
@@ -15,19 +16,21 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/blog" element={<Blog/>}/>
-          <Route path="/blog/post" element={<BlogPost/>}/>
-          <Route path="/blog/article" element={<Article/>}/>
-          <Route path="/about" element={<AboutUs/>}/>
-          <Route path="/contact" element={<ContactUs/>}/>
-          <Route path="/faq" element={<QuestionAnswers/>}/>
-          <Route path="/services" element={<Services/>}/>
-          <Route path="/consult" element={<Consultation/>}/>
-          <Route path="/*" element={<Home/>}/>
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/blog" element={<Blog/>}/>
+            <Route path="/blog/post" element={<BlogPost/>}/>
+            <Route path="/blog/article" element={<Article/>}/>
+            <Route path="/about" element={<AboutUs/>}/>
+            <Route path="/contact" element={<ContactUs/>}/>
+            <Route path="/faq" element={<QuestionAnswers/>}/>
+            <Route path="/services" element={<Services/>}/>
+            <Route path="/consult" element={<Consultation/>}/>
+            <Route path="/*" element={<Home/>}/>
+          </Routes>
+        </ScrollToTop>
       </BrowserRouter>
     </div>
   );

@@ -83,7 +83,8 @@ const PictureBarMid = () => {
         color: '#fff',
         fontWeight: '900',
         marginTop: '20px',
-        '&:hover':{backgroundColor:'#2f53a5', color:'white'},
+        cursor:'default',
+        '&:hover':{backgroundColor:'#07163a', color:'white'},
         [theme.breakpoints.down('xl')]:{
             width:'50px',
             height:'50px',
@@ -121,7 +122,7 @@ const PictureBarMid = () => {
                 </Grid>
                 <Grid item sm={7} xs={9}>
                     <StyledBodyText>
-                        <b>Lifestyle and home remedies</b><br/> Health disfunctionalities can be improved — or even prevented — by making certain lifestyle changes               
+                        <b>Lifestyle and Home Remedies</b><br/> Health disfunctionalities can be improved — or even prevented — by making certain lifestyle changes               
                     </StyledBodyText>
                 </Grid>
             </Grid>
@@ -133,7 +134,7 @@ const PictureBarMid = () => {
                 </Grid>
                 <Grid item sm={7} xs={9}> 
                     <StyledBodyText>
-                        <b>Coping and support</b><br/> We provide cardiac rehabilitation for people who have cardiovascular disease that's caused a heart attack or has required surgery to correct.     
+                        <b>Coping and Support</b><br/> We provide cardiac rehabilitation for people who have cardiovascular disease that's caused a heart attack or has required surgery to correct.     
                     </StyledBodyText>
                 </Grid>
             </Grid>
