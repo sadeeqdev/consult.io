@@ -117,19 +117,19 @@ const Consultation = () => {
             <Grid item md={4} xs={12}>
             <StyledItemCard>
                     <div>
-                    <StyledItemHeading>One-Time</StyledItemHeading>
+                    <StyledItemHeading>Basic Care</StyledItemHeading>
                     <StyledItemText>
                       <StyledHeaderText>
-                        <span style={{fontSize:'40px', fontWeight:'700'}}>$5</span>/session
+                        <span style={{fontSize:'40px', fontWeight:'700'}}>$75</span>/year
                       </StyledHeaderText>
                       <ul style={{padding:15, fontSize:'20px', lineHeight:'40px', color:'#333'}}>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
+                        <li>12 months of care</li>
+                        <li>7-part health plan</li>
+                        <li>Health plan updates</li>
+                        <li>CMS Integration</li>
+                        <li>Email & SMS reminders</li>
+                        <li>Drop-in-Lab</li>
+                        <li>Expert only</li>
                       </ul>    
                       <StyledItemButton>
                             Select
@@ -141,19 +141,19 @@ const Consultation = () => {
             <Grid item md={4} xs={12}>
                 <StyledItemCard>
                     <div>
-                    <StyledItemHeading>Monthly</StyledItemHeading>
+                    <StyledItemHeading>Regular Care</StyledItemHeading>
                     <StyledItemText>
                       <StyledHeaderText>
-                        <span style={{fontSize:'40px', fontWeight:'700'}}>$30</span>/year
+                        <span style={{fontSize:'40px', fontWeight:'700'}}>$150</span>/year
                       </StyledHeaderText>
                       <ul style={{padding:15, fontSize:'20px', lineHeight:'40px', color:'#333'}}>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
+                        <li>12 months of care</li>
+                        <li>7-part health plan</li>
+                        <li>Health plan updates</li>
+                        <li>CMS Integration</li>
+                        <li>Email & SMS reminders</li>
+                        <li>Drop-in-Lab</li>
+                        <li>Expert only</li>
                       </ul>    
                       <StyledItemButton>
                          Select
@@ -166,19 +166,19 @@ const Consultation = () => {
             <Grid item md={4} xs={12}>
                 <StyledItemCard>
                     <div>
-                    <StyledItemHeading>Yearly</StyledItemHeading>
+                    <StyledItemHeading>Ultimate Care</StyledItemHeading>
                     <StyledItemText>
                       <StyledHeaderText>
-                        <span style={{fontSize:'40px', fontWeight:'700'}}>$300</span>/year
+                        <span style={{fontSize:'40px', fontWeight:'700'}}>$280</span>/year
                       </StyledHeaderText>
                       <ul style={{padding:15, fontSize:'20px', lineHeight:'40px', color:'#333'}}>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
-                        <li>Hello</li>
+                        <li>12 months of care</li>
+                        <li>7-part health plan</li>
+                        <li>Health plan updates</li>
+                        <li>CMS Integration</li>
+                        <li>Email & SMS reminders</li>
+                        <li>Drop-in-Lab</li>
+                        <li>Expert only</li>
                       </ul>    
                       <StyledItemButton>
                             Select
