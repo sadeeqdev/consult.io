@@ -8,7 +8,14 @@ const QuestionBlock = ({question, answer}) => {
         width:'55%',
         margin:'30px auto',
         boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)',
-        fontSize:'24px'
+        fontSize:'24px',
+        width:'65%',
+        [theme.breakpoints.down('md')]:{
+            width:'90%',
+        },
+        [theme.breakpoints.up('xl')]:{
+            width:'60%',
+        }
     }))
 
     const StyledQuestionBlock = styled('div')(({theme}) => ({

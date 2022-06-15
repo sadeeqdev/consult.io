@@ -151,7 +151,13 @@ const BlogWelcomeBanner = () => {
         padding:'30px 0',
         width:'70%',
         marginTop: '40px',
-        margin:'40px auto 0 auto'
+        margin:'40px auto 0 auto',
+        [theme.breakpoints.down('md')]:{
+            width:'90%',
+        },
+        [theme.breakpoints.up('xl')]:{
+            width:'70%',
+        }
     }))
 
 

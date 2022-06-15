@@ -17,12 +17,18 @@ const QuestionAnswers = () => {
   ]
 
   const StyledTitleBlock = styled('div')(({theme}) => ({
-    width:'55%',
     margin:'auto',
     marginTop:'100px',
     fontSize:'35px',
     fontWeight:600,
-    color:'#07163a'
+    color:'#07163a',
+    width:'65%',
+    [theme.breakpoints.down('md')]:{
+        width:'90%',
+    },
+    [theme.breakpoints.up('xl')]:{
+        width:'60%',
+    }
   }))
 
   return (

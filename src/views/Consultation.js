@@ -3,6 +3,8 @@ import React, { Fragment } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import { Button, Grid } from "@mui/material"
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CancelIcon from '@mui/icons-material/Cancel';
 
 const Consultation = () => {
 
@@ -20,13 +22,13 @@ const Consultation = () => {
   }))
 
   const StyledBannerDiv = styled('div')(({theme})=>({
-      width: '70%',
+      width: '60%',
       margin: 'auto',
       [theme.breakpoints.down('md')]:{
           width:'100%',
       },
       [theme.breakpoints.up('xl')]:{
-          width:'70%',
+          width:'50%',
       }
   }))
 
@@ -58,8 +60,14 @@ const Consultation = () => {
   }))
 
   const StyledBody = styled('div')(({theme}) => ({
-      width:'60%',
+      width:'70%',
       margin:'-150px auto auto auto',
+      [theme.breakpoints.down('md')]:{
+        width:'90%',
+      },
+      [theme.breakpoints.up('xl')]:{
+          width:'60%',
+      }
   }))
 
   const StyledBodyGrid = styled(Grid)(({theme}) => ({
@@ -69,9 +77,9 @@ const Consultation = () => {
   const StyledItemCard = styled(Grid)(({theme}) => ({
       width:'100%',
       backgroundColor:'#fff',
-      height:'570px',
+      height:'auto',
       boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)',
-      }))
+  }))
 
   const StyledItemHeading = styled(Grid)(({theme}) => ({
       textAlign:'center',
@@ -99,6 +107,17 @@ const Consultation = () => {
       fontSize:'16px',
   }))
 
+  const StyledCheckButton = styled(CheckCircleIcon)(({theme}) =>({
+    marginBottom:'-5px',
+    color:'green'
+  }))
+
+  const StyledCancelButton = styled(CancelIcon)(({theme}) =>({
+    marginBottom:'-5px',
+    color:'#e13636'
+  }))
+
+
   return (
     <Fragment>
       <Navbar/>
@@ -122,14 +141,14 @@ const Consultation = () => {
                       <StyledHeaderText>
                         <span style={{fontSize:'40px', fontWeight:'700'}}>$75</span>/year
                       </StyledHeaderText>
-                      <ul style={{padding:15, fontSize:'20px', lineHeight:'40px', color:'#333'}}>
-                        <li>12 months of care</li>
-                        <li>7-part health plan</li>
-                        <li>Health plan updates</li>
-                        <li>CMS Integration</li>
-                        <li>Email & SMS reminders</li>
-                        <li>Drop-in-Lab</li>
-                        <li>Expert only</li>
+                      <ul style={{padding:10, fontSize:'20px', lineHeight:'40px', color:'#333', textDecoration:'none', listStyle:'none'}}>
+                        <li><StyledCheckButton/> 12 months of care</li>
+                        <li><StyledCheckButton/> 7-part health plan</li>
+                        <li><StyledCheckButton/> Health plan updates</li>
+                        <li><StyledCancelButton/> CMS Integration</li>
+                        <li><StyledCancelButton/> Email & SMS reminders</li>
+                        <li><StyledCancelButton/> Drop-in-Lab</li>
+                        <li><StyledCancelButton/> Expert only</li>
                       </ul>    
                       <StyledItemButton>
                             Select
@@ -146,14 +165,14 @@ const Consultation = () => {
                       <StyledHeaderText>
                         <span style={{fontSize:'40px', fontWeight:'700'}}>$150</span>/year
                       </StyledHeaderText>
-                      <ul style={{padding:15, fontSize:'20px', lineHeight:'40px', color:'#333'}}>
-                        <li>12 months of care</li>
-                        <li>7-part health plan</li>
-                        <li>Health plan updates</li>
-                        <li>CMS Integration</li>
-                        <li>Email & SMS reminders</li>
-                        <li>Drop-in-Lab</li>
-                        <li>Expert only</li>
+                      <ul style={{padding:10, fontSize:'20px', lineHeight:'40px', color:'#333', textDecoration:'none', listStyle:'none'}}>
+                        <li><StyledCheckButton/> 12 months of care</li>
+                        <li><StyledCheckButton/> 7-part health plan</li>
+                        <li><StyledCheckButton/> Health plan updates</li>
+                        <li><StyledCheckButton/> CMS Integration</li>
+                        <li><StyledCheckButton/> Email & SMS reminders</li>
+                        <li><StyledCancelButton/> Drop-in-Lab</li>
+                        <li><StyledCancelButton/> Expert only</li>
                       </ul>    
                       <StyledItemButton>
                          Select
@@ -171,14 +190,14 @@ const Consultation = () => {
                       <StyledHeaderText>
                         <span style={{fontSize:'40px', fontWeight:'700'}}>$280</span>/year
                       </StyledHeaderText>
-                      <ul style={{padding:15, fontSize:'20px', lineHeight:'40px', color:'#333'}}>
-                        <li>12 months of care</li>
-                        <li>7-part health plan</li>
-                        <li>Health plan updates</li>
-                        <li>CMS Integration</li>
-                        <li>Email & SMS reminders</li>
-                        <li>Drop-in-Lab</li>
-                        <li>Expert only</li>
+                      <ul style={{padding:10, fontSize:'20px', lineHeight:'40px', color:'#333', textDecoration:'none', listStyle:'none'}}>
+                        <li><StyledCheckButton/> 12 months of care</li>
+                        <li><StyledCheckButton/> 7-part health plan</li>
+                        <li><StyledCheckButton/> Health plan updates</li>
+                        <li><StyledCheckButton/> CMS Integration</li>
+                        <li><StyledCheckButton/> Email & SMS reminders</li>
+                        <li><StyledCheckButton/> Drop-in-Lab</li>
+                        <li><StyledCheckButton/> Expert only</li>
                       </ul>    
                       <StyledItemButton>
                             Select

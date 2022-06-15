@@ -20,8 +20,14 @@ const QuestionAnswers = () => {
     }))
 
     const StyledBody = styled('div')(({theme}) => ({
-        width:'60%',
+        width:'75%',
         margin:'auto',
+        [theme.breakpoints.down('md')]:{
+            width:'90%',
+        },
+        [theme.breakpoints.up('xl')]:{
+            width:'60%',
+        }
     }))
 
     const StyledBodyGrid = styled(Grid)(({theme}) => ({
@@ -31,7 +37,7 @@ const QuestionAnswers = () => {
     const StyledItemCard = styled(Grid)(({theme}) => ({
         width:'100%',
         backgroundColor:'#fff',
-        height:'470px',
+        height:'auto',
         boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)',
         display:'flex',
         justifyContent: 'center'
