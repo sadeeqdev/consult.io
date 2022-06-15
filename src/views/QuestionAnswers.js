@@ -29,7 +29,7 @@ const QuestionAnswers = () => {
     <div>
         <Navbar/>
           <StyledTitleBlock>
-            Popular Asked Questions
+            Frequently Asked Questions
           </StyledTitleBlock>
           <div>
             {questions.map((question, index) => (

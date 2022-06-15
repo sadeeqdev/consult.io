@@ -8,6 +8,7 @@ import MedicationLiquidIcon from '@mui/icons-material/MedicationLiquid';
 import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
 import HealingIcon from '@mui/icons-material/Healing';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
+import { Fragment } from "react";
 
 const QuestionAnswers = () => {
 
@@ -73,7 +74,7 @@ const QuestionAnswers = () => {
     })
 
   return (
-    <div>
+    <Fragment>
         <Navbar/>
             <StyledBody>
                 <StyledTitleBlock>
@@ -153,7 +154,7 @@ const QuestionAnswers = () => {
                                 <MonitorHeartIcon sx={{fontSize:'60px', color:'#fff'}}/>
                             </StyledItemHeader>
                             <div>
-                            <StyledItemHeading>HEART CADRIOGRAPHY</StyledItemHeading>
+                            <StyledItemHeading>CADRIOGRAPHY</StyledItemHeading>
                             <StyledItemText>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 <StyledItemButton>
@@ -182,7 +183,7 @@ const QuestionAnswers = () => {
                 </StyledBodyGrid>
             </StyledBody>
         <Footer/>
-    </div>
+    </Fragment>
   )
 }
 

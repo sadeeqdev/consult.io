@@ -9,6 +9,7 @@ import Home from './views/Home'
 import Login from './views/Login'
 import QuestionAnswers from './views/QuestionAnswers';
 import Services from './views/Services';
+import Consultation from './views/Consultation';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<ContactUs/>}/>
           <Route path="/faq" element={<QuestionAnswers/>}/>
           <Route path="/services" element={<Services/>}/>
+          <Route path="/consult" element={<Consultation/>}/>
           <Route path="/*" element={<Home/>}/>
         </Routes>
       </BrowserRouter>
