@@ -106,7 +106,7 @@ const PictureBar = () => {
                 Success Will Come If You Think Freely Without Thinking About What To Do
             </StyledHeaderText>
             <StyledBodyText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
+                If I could teach only one value to live by, it would be this: Success will come and go, but integrity is forever. Integrity means doing the right thing at all times and in all circumstances, whether or not anyone is watching. It takes having the courage to do the right thing, no matter what the consequences will be.
             </StyledBodyText>
             <StyledBodyButton>
                 Talk to an expert

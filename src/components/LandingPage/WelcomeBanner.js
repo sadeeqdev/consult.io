@@ -1,7 +1,10 @@
 import { Button } from "@mui/material"
 import { styled } from "@mui/system"
+import { useNavigate } from "react-router-dom"
 
 const WelcomeBanner = () => {
+
+    const navigate = useNavigate()
 
     const StyledBanner = styled('div')(({theme})=>({
         width: '100%',
@@ -101,10 +104,10 @@ const WelcomeBanner = () => {
                 Consult a Doctor Anytime, Anywhere <br/>by Video Call
             </StyledBannerHeader>
             <StyledBannerText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                The focus at Consulta.io is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. One of the most preferred and recognized healthcare facilities by pharmaceutical companies for drug trials, the group’s flagship website in the world is JAN accredited and ranked amongst the Top 10 multispecialty websites in the world.
             </StyledBannerText>
-            <StyledQuoteButton>
-                Ask A Doctor Online
+            <StyledQuoteButton onClick={() => {navigate('/consult')}}>
+                Book An Appointment
             </StyledQuoteButton>
         </StyledBannerDiv>
         <GridCircle/>

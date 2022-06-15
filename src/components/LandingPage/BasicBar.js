@@ -63,7 +63,7 @@ const BasicBar = () => {
                     <b>All Specialist</b>
                 </Typography>
                 <Typography variant="body1" color="initial">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                A social seed sown more than five decades ago is today the country’s third largest healthcare group.
                 </Typography>
             </GridText>
         </Grid>
@@ -79,7 +79,7 @@ const BasicBar = () => {
                     <b>Private and Secure</b>
                 </Typography>
                 <Typography variant="body1" color="initial">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    Providing comprehensive care that is both curative and preventive in nature for a wide variety of patients.
                 </Typography>
             </GridText>
         </Grid>
@@ -95,7 +95,7 @@ const BasicBar = () => {
                     <b>Thousand Customers</b>
                 </Typography>
                 <Typography variant="body1" color="initial">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    Thousand of lives touched with online consultation and therapy through provision of top notch services. 
                 </Typography>
             </GridText>
         </Grid>

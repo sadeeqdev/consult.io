@@ -109,7 +109,7 @@ const PictureBarBottom = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
             </StyledBodyText>
             <StyledBodyButton>
-                Talk to an expert
+                See More FAQs 
                 <ArrowRightAltIcon sx={{color:'white'}}/>
             </StyledBodyButton>
         </Grid>
