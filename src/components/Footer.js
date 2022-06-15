@@ -106,7 +106,7 @@ const Footer = () => {
                 Consulta.io
             </StyledGridLogo>
             <StyledGridText>
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+                 An affordable tertiary care multispecialty healthcare framework that provides the best health care services you can find online.
                  <br/>
                  <br/>
                  Copyright 2022 - All Rights Reserved

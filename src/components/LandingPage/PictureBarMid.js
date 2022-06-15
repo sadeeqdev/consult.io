@@ -111,7 +111,7 @@ const PictureBarMid = () => {
                 Know About Our Special Treatments & Tricks
             </StyledHeaderText>
             <StyledBodyText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                Know about our high class consultation and therapy treatment and tricks focused on giving you the best health care decisions.  
             </StyledBodyText>
             <Grid container direction="row">
                 <Grid item sm={2.5} xs={3}>
@@ -121,8 +121,8 @@ const PictureBarMid = () => {
                 </Grid>
                 <Grid item sm={7} xs={9}>
                     <StyledBodyText>
-                        <b>Lorem ipsum dolor sit amet, consectetur</b> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.               
-                        </StyledBodyText>
+                        <b>Lifestyle and home remedies</b><br/> Health disfunctionalities can be improved — or even prevented — by making certain lifestyle changes               
+                    </StyledBodyText>
                 </Grid>
             </Grid>
             <Grid container direction="row">
@@ -133,8 +133,8 @@ const PictureBarMid = () => {
                 </Grid>
                 <Grid item sm={7} xs={9}> 
                     <StyledBodyText>
-                        <b>Lorem ipsum dolor sit amet, consectetur</b>, adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.               
-                        </StyledBodyText>
+                        <b>Coping and support</b><br/> We provide cardiac rehabilitation for people who have cardiovascular disease that's caused a heart attack or has required surgery to correct.     
+                    </StyledBodyText>
                 </Grid>
             </Grid>
             <Grid container direction="row">
@@ -145,7 +145,7 @@ const PictureBarMid = () => {
                 </Grid>
                 <Grid item sm={7} xs={9}>
                     <StyledBodyText>
-                        <b>Lorem ipsum dolor sit amet, consectetur</b>, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        <b>Clinical Trials</b><br/> Testing new treatments, interventions and tests as a means to prevent, detect, treat or manage health conditions.
                     </StyledBodyText>
                 </Grid>
             </Grid>

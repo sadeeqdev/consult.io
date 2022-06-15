@@ -86,6 +86,7 @@ const Consultation = () => {
       fontSize:'23px',
       fontWeight:600,
       paddingTop:'40px',
+      color:'#222'
   }))
 
   const StyledItemText = styled(Grid)(({theme}) => ({
@@ -105,6 +106,7 @@ const Consultation = () => {
   const StyledHeaderText = styled('div')(({theme}) => ({
       textAlign:'center',
       fontSize:'16px',
+      color:'#444'
   }))
 
   const StyledCheckButton = styled(CheckCircleIcon)(({theme}) =>({
