@@ -24,7 +24,7 @@ const QuestionAnswers = () => {
     }))
 
     const StyledBodyGrid = styled(Grid)(({theme}) => ({
-        marginTop:'70px',
+        marginTop:'65px',
     }))
 
     const StyledItemCard = styled(Grid)(({theme}) => ({
@@ -57,7 +57,7 @@ const QuestionAnswers = () => {
     const StyledItemText = styled(Grid)(({theme}) => ({
         textAlign:'justify',
         lineHeight:'30px',
-        fontSize:'20px',
+        fontSize:'18px',
         padding:'20px 30px 15px 30px'
     }))
 
@@ -67,7 +67,7 @@ const QuestionAnswers = () => {
         backgroundColor:'#07163a',
         color: '#fff',
         fontWeight: '900',
-        marginTop: '20px',
+        marginTop: '25px',
         '&:hover':{backgroundColor:'#2f53a5', color:'white'}
 
     })
@@ -153,7 +153,7 @@ const QuestionAnswers = () => {
                                 <MonitorHeartIcon sx={{fontSize:'60px', color:'#fff'}}/>
                             </StyledItemHeader>
                             <div>
-                            <StyledItemHeading>HEART RADIOGRAPHY</StyledItemHeading>
+                            <StyledItemHeading>HEART CADRIOGRAPHY</StyledItemHeading>
                             <StyledItemText>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 <StyledItemButton>
