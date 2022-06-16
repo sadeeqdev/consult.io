@@ -7,11 +7,12 @@ import PictureBarBottom from "../components/LandingPage/PictureBarBottom";
 import PictureBarMid from "../components/LandingPage/PictureBarMid";
 import WelcomeBanner from "../components/LandingPage/WelcomeBanner";
 import WelcomeImage from "../components/LandingPage/WelcomeImage";
+import { Fragment } from "react";
 
 const Home = () => {
 
   return (
-    <div>
+    <Fragment>
         <Navbar/>
         <WelcomeBanner/>
         <WelcomeImage/>
@@ -21,7 +22,7 @@ const Home = () => {
         <PictureBarBottom/>
         <Partners/>
         <Footer/>
-    </div>
+    </Fragment>
   )
 }
 

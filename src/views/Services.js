@@ -111,8 +111,7 @@ const QuestionAnswers = () => {
                             <div>
                             <StyledItemHeading>EMERGENCY</StyledItemHeading>
                             <StyledItemText>
-                            Routine medical check-ups are a great way to stay on top of your health and wellness. It is easy to think that we are healthy and there is no need for a health check-up, but with regular medical checkups, you can detect any health threats early.
-
+                                Routine medical check-ups are a great way to stay on top of your health and wellness. It is easy to think that we are healthy and there is no need for a health check-up, but with regular medical checkups, you can detect any health threats early.
                                 <StyledItemButton>
                                     Enroll
                                 </StyledItemButton>                          

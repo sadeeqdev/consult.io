@@ -16,7 +16,7 @@ const Consultation = () => {
     textAlign:'center',
     [theme.breakpoints.down('md')]:{
         width: '100%',
-        height:'auto',
+        height:'250px',
         paddingBottom:'30px',
     }
   }))
@@ -53,7 +53,7 @@ const Consultation = () => {
       lineHeight: '10px',
       paddingTop:'120px',
       [theme.breakpoints.down('md')]:{
-          paddingTop:'20px',
+          paddingTop:'80px',
           fontSize:'16px',
           lineHeight: '20px',
       }
