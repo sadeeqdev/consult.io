@@ -1,6 +1,5 @@
 import { Grid } from "@mui/material"
 import { styled } from "@mui/system"
-import SideImg1 from '../../assets/docimg_1.jpg';
 import SideImg2 from '../../assets/docimg_5.jpg';
 import SideImg3 from '../../assets/doc_img_8.jpg';
 import SideImg4 from '../../assets/docimg_7.jpg';
