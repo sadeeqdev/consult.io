@@ -4,6 +4,7 @@ import MainImg from '../../assets/docimg_2.jpg';
 import SideImg1 from '../../assets/docimg_1.jpg';
 import SideImg2 from '../../assets/docimg_5.jpg';
 import SideImg3 from '../../assets/doc_img_8.jpg';
+import Skeleton from '@mui/material/Skeleton';
 
 const BlogWelcomeBanner = () => {
 
@@ -12,7 +13,7 @@ const BlogWelcomeBanner = () => {
         height: 750,
         backgroundColor: '#07163a',
         color: 'white',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
             width: '100%',
             height:'auto',
             paddingBottom:'30px',
@@ -22,7 +23,7 @@ const BlogWelcomeBanner = () => {
     const StyledBannerDiv = styled(Grid)(({theme})=>({
         width: '80%',
         margin: '0px auto',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
             width:'90%',
         },
         [theme.breakpoints.up('xl')]:{
@@ -33,7 +34,7 @@ const BlogWelcomeBanner = () => {
     const StyledMainImage = styled('img')(({theme})=>({
         width:'100%',
         height:'auto',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
             
         },
         [theme.breakpoints.down('lg')]:{
@@ -44,7 +45,7 @@ const BlogWelcomeBanner = () => {
     const StyledSideImage = styled('img')(({theme})=>({
         width:'80%',
         height:'auto',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
             width:'90%',
         },
         [theme.breakpoints.down('lg')]:{
@@ -54,7 +55,7 @@ const BlogWelcomeBanner = () => {
 
     const StyledGrid = styled(Grid)(({theme})=>({
         marginRight:'40px auto',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
             marginTop:'40px',
         },
         [theme.breakpoints.down('lg')]:{
@@ -66,7 +67,7 @@ const BlogWelcomeBanner = () => {
         paddingBottom:'15px',
         marginBottom:'15px',
         borderBottom:'1px solid #202d4d',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
            
         },
         [theme.breakpoints.down('lg')]:{
@@ -79,7 +80,7 @@ const BlogWelcomeBanner = () => {
         color:"#bfbfbf",
         padding:'8px 0',
         fontWeight:300,
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
            
         }
     }))
@@ -89,7 +90,7 @@ const BlogWelcomeBanner = () => {
         color:"#bfbfbf",
         padding:'0 0 8px 0',
         fontWeight:300,
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
            
         }
     }))
@@ -99,7 +100,7 @@ const BlogWelcomeBanner = () => {
         fontWeight:550,
         padding:'2px 0',
         lineHeight:'30px',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
            
         }
     }))
@@ -109,7 +110,7 @@ const BlogWelcomeBanner = () => {
         fontWeight:300,
         padding:'10px 0',
         lineHeight:'25px',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
            
         }
     }))
@@ -119,7 +120,7 @@ const BlogWelcomeBanner = () => {
         fontWeight:500,
         lineHeight:'30px',
         '&:hover':{color:'#2f53a5', cursor:'pointer'},
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
            
         }
     }))
@@ -131,7 +132,7 @@ const BlogWelcomeBanner = () => {
         border: '15px solid #fff',
         marginTop:'-530px',
         marginLeft:'-210px',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
             display:'none',
         },
         [theme.breakpoints.down('lg')]:{
@@ -160,13 +161,19 @@ const BlogWelcomeBanner = () => {
         }
     }))
 
+    const StyledSkeleton = styled(Skeleton)(({theme}) => ({
+        width:'600px',
+        height:'400px',
+        backgroundColor:'#cfcfcf'
+    }))
+
 
   return (
     <StyledBanner>
         <StyledMainTitle>Latest Articles From Consulta.io</StyledMainTitle>
         <StyledBannerDiv container spacing={0} direction="row">
             <StyledGrid item md={5.5} xs={12}>
-                <StyledMainImage src={MainImg}/>
+                {MainImg ? <StyledMainImage src={MainImg}/> : <StyledSkeleton variant="rectangular"/>}
                 <StyledDateText>
                     17 Febuary 2021
                 </StyledDateText>
@@ -174,7 +181,7 @@ const BlogWelcomeBanner = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </StyledBannerHeaderText>
                 <StyledBannerText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumdod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
                 </StyledBannerText>
             </StyledGrid>
             <StyledGrid item md={0.5}>

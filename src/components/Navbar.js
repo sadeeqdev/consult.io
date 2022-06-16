@@ -4,8 +4,14 @@ import Toolbar from '@mui/material/Toolbar'
 import { styled } from '@mui/material/styles';
 import { Box } from '@mui/system';
 import { Button, IconButton } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from 'react-router';
+import MenuIcon from '@mui/icons-material/Menu';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
 
 const HeaderText = styled('h2')({
     color:'#fff',
@@ -38,8 +44,59 @@ const StyledLoginButton = styled(Button)({
 })
 
 const Navbar = () => {
-
     const navigate = useNavigate()
+    const [state, setState] = React.useState({left: false});
+    
+    const toggleDrawer = (anchor, open) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+          return;
+        }
+    
+        setState({ ...state, [anchor]: open });
+      };
+    
+      const list = (anchor) => (
+        <Box
+          sx={{ width:250 }}
+          role="presentation"
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+        >
+          <List>
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemText primary="Home" />
+                </ListItemButton>
+              </ListItem>
+          <Divider />
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemText primary="Services" />
+                </ListItemButton>
+              </ListItem>
+          <Divider />
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemText primary="Question and Answer" />
+                </ListItemButton>
+              </ListItem>
+          <Divider />
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemText primary="Consultation" />
+                </ListItemButton>
+              </ListItem>
+          <Divider />
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemText primary="Articles" />
+                </ListItemButton>
+              </ListItem>
+          </List>
+          <Divider />
+        </Box>
+      );
+
 
   return (
     <div>
@@ -67,12 +124,18 @@ const Navbar = () => {
                         <StyledLoginButton onClick={() => navigate("/login")} sx={{display:{xs:'none', md:'block'}}}>
                             Log in
                         </StyledLoginButton>
-                        <IconButton sx={{display:{xs:'block', md:'none', color:'white'}}}>
-                          <MenuIcon/>
+                        <IconButton onClick={toggleDrawer("left" ,true)} sx={{display:{xs:'block', md:'none', color:'white'}}}>
+                          <MenuIcon />
                         </IconButton>
                     </Box>
                 </StyledToolBar>
         </AppBar>
+        <Drawer
+            open={state["left"]}
+            onClose={toggleDrawer("left", false)}
+          >
+              {list('left')}
+          </Drawer>
     </div>
   )
 }
