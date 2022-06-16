@@ -63,31 +63,31 @@ const Navbar = () => {
           onKeyDown={toggleDrawer(anchor, false)}
         >
           <List>
-              <ListItem disablePadding>
+              <ListItem onClick={() => navigate("/")}  disablePadding>
                 <ListItemButton>
                   <ListItemText primary="Home" />
                 </ListItemButton>
               </ListItem>
           <Divider />
-              <ListItem disablePadding>
+              <ListItem onClick={() => navigate("/services")} disablePadding>
                 <ListItemButton>
                   <ListItemText primary="Services" />
                 </ListItemButton>
               </ListItem>
           <Divider />
-              <ListItem disablePadding>
+              <ListItem onClick={() => navigate("/faq")} disablePadding>
                 <ListItemButton>
                   <ListItemText primary="Question and Answer" />
                 </ListItemButton>
               </ListItem>
           <Divider />
-              <ListItem disablePadding>
+              <ListItem onClick={() => navigate("/consult")} disablePadding>
                 <ListItemButton>
                   <ListItemText primary="Consultation" />
                 </ListItemButton>
               </ListItem>
           <Divider />
-              <ListItem disablePadding>
+              <ListItem onClick={() => navigate("/blog")} disablePadding>
                 <ListItemButton>
                   <ListItemText primary="Articles" />
                 </ListItemButton>
