@@ -60,7 +60,7 @@ const WelcomeBanner = () => {
         }
     }))
 
-    const StyledQuoteButton = styled(Button)({
+    const StyledQuoteButton = styled(Button)(({theme}) =>({
         width:'300px',
         height:'50px',
         borderRadius:'40px',
@@ -68,9 +68,20 @@ const WelcomeBanner = () => {
         color: '#07163a',
         fontWeight: '900',
         marginTop: '20px',
-        '&:hover':{backgroundColor:'#2f53a5', color:'white'}
+        fontSize:'17px',
+        '&:hover':{backgroundColor:'#2f53a5', color:'white'},
+        [theme.breakpoints.down('md')]:{
+            width:'250px',
+            height:'42px',
+            borderRadius:'40px',
+            backgroundColor:'#fff',
+            color: '#07163a',
+            fontWeight: '900',
+            marginTop: '20px',
+            fontSize:'15px'
+        }
 
-    })
+    }))
 
     const GridCircle = styled('div')(({theme})=>({
         width:'250px',
