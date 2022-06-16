@@ -16,6 +16,7 @@ const BasicBar = () => {
         [theme.breakpoints.down('sm')]:{
             marginTop:'30px',
             justifyContent:'center', 
+            marginRight:'60px'
         },
         [theme.breakpoints.down('xl')]:{
             width:"80%",
