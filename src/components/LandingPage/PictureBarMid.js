@@ -30,6 +30,7 @@ const PictureBarMid = () => {
         backgroundSize: '800px 500px',
         backgroundPosition:'center',
         marginTop: '0px',
+        float:'right',
         backgroundRepeat:'no-repeat',
         [theme.breakpoints.down('xl')]:{
             backgroundPosition:'center top',
@@ -41,6 +42,7 @@ const PictureBarMid = () => {
             backgroundSize: '120% 100%',
             borderRadius: '10px 50%',
             marginTop: '50px',
+            float:'none',
         },
         [theme.breakpoints.down('lg')]:{
             width:"100%",
