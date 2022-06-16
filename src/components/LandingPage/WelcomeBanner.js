@@ -23,7 +23,7 @@ const WelcomeBanner = () => {
         width: '80%',
         margin: 'auto',
         [theme.breakpoints.down('md')]:{
-            width:'100%',
+            width:'90%',
         },
         [theme.breakpoints.up('xl')]:{
             width:'70%',
