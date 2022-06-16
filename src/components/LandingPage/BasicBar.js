@@ -15,8 +15,11 @@ const BasicBar = () => {
         marginTop:'20px',
         [theme.breakpoints.down('sm')]:{
             marginTop:'30px',
-            marginRight:'130px'
-        }
+            justifyContent:'center', 
+        },
+        [theme.breakpoints.down('xl')]:{
+            width:"80%",
+        },
     }))
 
     const GridItem = styled('div')(({theme})=>({
