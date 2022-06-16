@@ -108,7 +108,7 @@ const Footer = () => {
                 Consulta.io
             </StyledGridLogo>
             <StyledGridText>
-                 An affordable tertiary care multispecialty healthcare framework that provides the best health care services you can find online.
+                 An affordable tertiary and multispecialty healthcare framework that provides the best health care services you can find online.
                  <br/>
                  <br/>
                  Copyright 2022 - All Rights Reserved
