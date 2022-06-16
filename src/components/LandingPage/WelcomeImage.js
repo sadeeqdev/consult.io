@@ -12,12 +12,12 @@ const WelcomeImage = () => {
         margin:'auto',
         marginTop: '-100px',
         [theme.breakpoints.down('sm')]:{
-            marginTop: '0',
-            width:'100%',
-            height:'0',
-            borderRadius: '0px',
-            backgroundImage: 'none',
-        }
+          marginTop:'-50px',
+          width:'90%',
+          height:'200px',
+          borderRadius: '5px',
+          backgroundSize: '300px 190px',
+      }
     }))
 
   return (

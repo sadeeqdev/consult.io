@@ -12,9 +12,9 @@ const WelcomeBanner = () => {
         backgroundColor: '#07163a',
         color: 'white',
         textAlign:'center',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
             width: '100%',
-            height:'450px',
+            height:'470px',
             paddingBottom:'30px',
         }
     }))
@@ -22,7 +22,7 @@ const WelcomeBanner = () => {
     const StyledBannerDiv = styled('div')(({theme})=>({
         width: '80%',
         margin: 'auto',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
             width:'100%',
         },
         [theme.breakpoints.up('xl')]:{
@@ -34,12 +34,13 @@ const WelcomeBanner = () => {
         fontWeight:400,
         fontSize:'55px',
         paddingTop:'100px',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
             width:'90%',
             height:'auto',
             margin:'auto',  
             fontSize:'px',
             color:'#fff',
+            paddingTop:'80px',
         },
         [theme.breakpoints.down('lg')]:{
             fontSize:'30px',
@@ -51,7 +52,7 @@ const WelcomeBanner = () => {
         fontSize:'15px',
         lineHeight: '30px',
         paddingTop:'30px',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
             paddingTop:'20px',
             fontSize:'12px',
             lineHeight: '20px',
@@ -78,7 +79,7 @@ const WelcomeBanner = () => {
         border: '15px solid #fff',
         marginTop:'-230px',
         marginLeft:'-185px',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('md')]:{
             width:'40px',
             height:'40px',
             borderRadius:'40px',
@@ -88,11 +89,11 @@ const WelcomeBanner = () => {
             zIndex:'-99'
         },
         [theme.breakpoints.down('lg')]:{
-            marginTop:'-270px',
-            width:'230px',
-            height:'230px',
-            borderRadius:'230px',
-            marginLeft:'-195px',
+            marginTop:'-330px',
+            width:'130px',
+            height:'130px',
+            borderRadius:'130px',
+            marginLeft:'-105px',
     }
     }))
 

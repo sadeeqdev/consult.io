@@ -32,6 +32,9 @@ const QuestionAnswers = () => {
 
     const StyledBodyGrid = styled(Grid)(({theme}) => ({
         marginTop:'65px',
+        [theme.breakpoints.down('md')]:{
+            marginTop:'15px',
+        },
     }))
 
     const StyledItemCard = styled(Grid)(({theme}) => ({
@@ -40,7 +43,10 @@ const QuestionAnswers = () => {
         height:'auto',
         boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)',
         display:'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        [theme.breakpoints.down('md')]:{
+            marginTop:'50px'
+        },
         }))
 
     const StyledItemHeader = styled(Grid)(({theme}) => ({
