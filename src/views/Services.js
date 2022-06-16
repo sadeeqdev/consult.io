@@ -95,7 +95,7 @@ const QuestionAnswers = () => {
                             <div>
                             <StyledItemHeading>MEDICAL CHECK UP</StyledItemHeading>
                             <StyledItemText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Routine medical check-ups are a great way to stay on top of your health and wellness. It is easy to think that we are healthy and there is no need for a health check-up, but with regular medical checkups, you can detect any health threats early.
                                 <StyledItemButton>
                                     Enroll
                                 </StyledItemButton>                          
@@ -111,7 +111,8 @@ const QuestionAnswers = () => {
                             <div>
                             <StyledItemHeading>EMERGENCY</StyledItemHeading>
                             <StyledItemText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Routine medical check-ups are a great way to stay on top of your health and wellness. It is easy to think that we are healthy and there is no need for a health check-up, but with regular medical checkups, you can detect any health threats early.
+
                                 <StyledItemButton>
                                     Enroll
                                 </StyledItemButton>                          
@@ -127,7 +128,7 @@ const QuestionAnswers = () => {
                             <div>
                             <StyledItemHeading>DAMAGE CONTROL</StyledItemHeading>
                             <StyledItemText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Routine medical check-ups are a great way to stay on top of your health and wellness. It is easy to think that we are healthy and there is no need for a health check-up, but with regular medical checkups, you can detect any health threats early.
                                 <StyledItemButton>
                                     Enroll
                                 </StyledItemButton>                          
@@ -146,7 +147,7 @@ const QuestionAnswers = () => {
                             <div>
                             <StyledItemHeading>FIRST AID</StyledItemHeading>
                             <StyledItemText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Routine medical check-ups are a great way to stay on top of your health and wellness. It is easy to think that we are healthy and there is no need for a health check-up, but with regular medical checkups, you can detect any health threats early.
                                 <StyledItemButton>
                                     Enroll
                                 </StyledItemButton>                          
@@ -162,7 +163,7 @@ const QuestionAnswers = () => {
                             <div>
                             <StyledItemHeading>CADRIOGRAPHY</StyledItemHeading>
                             <StyledItemText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Routine medical check-ups are a great way to stay on top of your health and wellness. It is easy to think that we are healthy and there is no need for a health check-up, but with regular medical checkups, you can detect any health threats early.
                                 <StyledItemButton>
                                     Enroll
                                 </StyledItemButton>                          
@@ -178,7 +179,7 @@ const QuestionAnswers = () => {
                             <div>
                             <StyledItemHeading>THERAPY</StyledItemHeading>
                             <StyledItemText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Routine medical check-ups are a great way to stay on top of your health and wellness. It is easy to think that we are healthy and there is no need for a health check-up, but with regular medical checkups, you can detect any health threats early.
                                 <StyledItemButton>
                                     Enroll
                                 </StyledItemButton>                          
