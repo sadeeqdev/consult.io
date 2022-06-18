@@ -1,6 +1,7 @@
 import { Box, Button } from "@mui/material"
 import { styled } from "@mui/system"
 import { useNavigate } from "react-router-dom"
+import BannerImg from '../../assets/docimg_4.jpg';
 
 const WelcomeBanner = () => {
 
@@ -12,10 +13,12 @@ const WelcomeBanner = () => {
         backgroundColor: '#07163a',
         color: 'white',
         textAlign:'center',
+        marginBottom:'400px',
         [theme.breakpoints.down('md')]:{
             width: '100%',
             height:'360px',
             paddingBottom:'30px',
+            marginBottom:'160px',
         }
     }))
 
@@ -55,7 +58,7 @@ const WelcomeBanner = () => {
         fontWeight:300,
         paddingTop:'30px',
         [theme.breakpoints.down('md')]:{
-            width:'85%',
+            width:'90%',
             margin:'auto',
             paddingTop:'10px',
             fontSize:'15px',
@@ -81,7 +84,7 @@ const WelcomeBanner = () => {
             backgroundColor:'#fff',
             color: '#07163a',
             fontWeight: '900',
-            marginTop: '20px',
+            marginTop: '15px',
             fontSize:'15px'
         }
 
@@ -106,6 +109,23 @@ const WelcomeBanner = () => {
     }
     }))
 
+    const WelcomeImage = styled('div')(({theme}) => ({
+        width:'800px',
+        height:'450px',
+        borderRadius: '10px',
+        backgroundImage: `url(${BannerImg})`,
+        backgroundSize: '800px 490px',
+        margin:'auto',
+        marginTop: '10px',
+        [theme.breakpoints.down('sm')]:{
+          marginTop:'25px',
+          width:'90%',
+          height:'200px',
+          borderRadius: '5px',
+          backgroundSize: '300px 190px',
+      }
+    }))
+
 
   return (
     <StyledBanner>
@@ -123,6 +143,7 @@ const WelcomeBanner = () => {
             </StyledQuoteButton>
         </StyledBannerDiv>
         <GridCircle/>
+        <WelcomeImage></WelcomeImage>
     </StyledBanner>
   )
 }
