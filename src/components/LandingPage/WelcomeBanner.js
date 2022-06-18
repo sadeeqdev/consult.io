@@ -38,6 +38,7 @@ const WelcomeBanner = () => {
             fontSize:'30px',
         },
         [theme.breakpoints.down('md')]:{
+            fontWeight:500,
             width:'100%',
             height:'auto',
             margin:'auto',  
