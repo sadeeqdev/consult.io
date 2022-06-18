@@ -1,4 +1,4 @@
-import { Button } from "@mui/material"
+import { Box, Button } from "@mui/material"
 import { styled } from "@mui/system"
 import { useNavigate } from "react-router-dom"
 
@@ -14,7 +14,7 @@ const WelcomeBanner = () => {
         textAlign:'center',
         [theme.breakpoints.down('md')]:{
             width: '100%',
-            height:'470px',
+            height:'360px',
             paddingBottom:'30px',
         }
     }))
@@ -23,7 +23,7 @@ const WelcomeBanner = () => {
         width: '80%',
         margin: 'auto',
         [theme.breakpoints.down('md')]:{
-            width:'90%',
+            width:'95%',
         },
         [theme.breakpoints.up('xl')]:{
             width:'70%',
@@ -34,29 +34,31 @@ const WelcomeBanner = () => {
         fontWeight:400,
         fontSize:'55px',
         paddingTop:'100px',
+        [theme.breakpoints.down('lg')]:{
+            fontSize:'30px',
+        },
         [theme.breakpoints.down('md')]:{
-            width:'90%',
+            width:'100%',
             height:'auto',
             margin:'auto',  
-            fontSize:'px',
+            fontSize:'30px',
             color:'#fff',
             paddingTop:'80px',
         },
-        [theme.breakpoints.down('lg')]:{
-            fontSize:'30px',
-            textShadow: '2px 2px #222222',
-        }
+        
     }))
 
     const StyledBannerText = styled('div')(({theme})=>({
-        fontSize:'15px',
+        fontSize:'20px',
         lineHeight: '30px',
         paddingTop:'30px',
         [theme.breakpoints.down('md')]:{
-            paddingTop:'20px',
-            fontSize:'12px',
-            lineHeight: '20px',
-            textShadow: '2px 2px #222222',
+            width:'85%',
+            margin:'auto',
+            paddingTop:'10px',
+            fontSize:'17px',
+            lineHeight: '22px',
+            fontWeight:300,
         }
     }))
 
@@ -91,16 +93,10 @@ const WelcomeBanner = () => {
         marginTop:'-230px',
         marginLeft:'-185px',
         [theme.breakpoints.down('md')]:{
-            width:'40px',
-            height:'40px',
-            borderRadius:'40px',
-            border: '5px solid #afafaf',
-            marginTop:'30px',
-            marginLeft:'-40px',
-            zIndex:'-99'
+            display:'none'
         },
         [theme.breakpoints.down('lg')]:{
-            marginTop:'-330px',
+            marginTop:'-250px',
             width:'130px',
             height:'130px',
             borderRadius:'130px',
@@ -113,10 +109,11 @@ const WelcomeBanner = () => {
     <StyledBanner>
         <StyledBannerDiv>
             <StyledBannerHeader>
-                Consult a Doctor Anytime, Anywhere <br/>by Video Call
+                Consult a Doctor Anytime, Anywhere by Video Call
             </StyledBannerHeader>
             <StyledBannerText>
-                The focus at Consulta.io is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. One of the most preferred and recognized healthcare facilities by pharmaceutical companies for drug trials, the group’s flagship website in the world is JAN accredited and ranked amongst the Top 10 multispecialty websites in the world.
+                <Box sx={{display:{xs:'none', md:'block'}}}>The focus at Consulta.io is to develop an affordable tertiary and multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. One of the most preferred and recognized healthcare facilities by pharmaceutical companies for drug trials.</Box>
+                <Box sx={{display:{xs:'block', md:'none'}}}>Consulta.io is an affordable tertiary and multispecialty healthcare framework that specializes in online therapy and medical services.</Box>
             </StyledBannerText>
             <StyledQuoteButton onClick={() => {navigate('/consult')}}>
                 Book An Appointment

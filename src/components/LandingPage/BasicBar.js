@@ -14,7 +14,7 @@ const BasicBar = () => {
         textAlign:'center', 
         marginTop:'20px',
         [theme.breakpoints.down('sm')]:{
-            marginTop:'30px',
+            marginTop:'10px',
             justifyContent:'center', 
             marginRight:'60px'
         },
