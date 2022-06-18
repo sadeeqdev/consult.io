@@ -8,7 +8,7 @@ const WelcomeBanner = () => {
 
     const StyledBanner = styled('div')(({theme})=>({
         width: '100%',
-        height: 550,
+        height: 530,
         backgroundColor: '#07163a',
         color: 'white',
         textAlign:'center',
@@ -49,14 +49,15 @@ const WelcomeBanner = () => {
     }))
 
     const StyledBannerText = styled('div')(({theme})=>({
-        fontSize:'20px',
+        fontSize:'18px',
         lineHeight: '30px',
+        fontWeight:300,
         paddingTop:'30px',
         [theme.breakpoints.down('md')]:{
             width:'85%',
             margin:'auto',
             paddingTop:'10px',
-            fontSize:'17px',
+            fontSize:'15px',
             lineHeight: '22px',
             fontWeight:300,
         }
@@ -109,7 +110,8 @@ const WelcomeBanner = () => {
     <StyledBanner>
         <StyledBannerDiv>
             <StyledBannerHeader>
-                Consult a Doctor Anytime, Anywhere by Video Call
+            <Box sx={{display:{xs:'none', md:'block'}}}>Consult a Doctor Anytime, Anywhere <br/>by Video Call</Box>
+            <Box sx={{display:{xs:'block', md:'none'}}}>Consult a Doctor Anytime, Anywhere by Video Call</Box>
             </StyledBannerHeader>
             <StyledBannerText>
                 <Box sx={{display:{xs:'none', md:'block'}}}>The focus at Consulta.io is to develop an affordable tertiary and multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. One of the most preferred and recognized healthcare facilities by pharmaceutical companies for drug trials.</Box>

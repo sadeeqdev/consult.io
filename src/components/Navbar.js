@@ -13,11 +13,15 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
-const HeaderText = styled('h2')({
+const HeaderText = styled('h2')(({theme}) => ({
     color:'#fff',
     fontWeight:'900',
-    fontSize:'23px'
-})
+    fontSize:'23px',
+    [theme.breakpoints.down('md')]:{
+      fontWeight:'700',
+      fontSize:'20px',
+  },
+}))
 
 
 const StyledToolBar = styled(Toolbar)({
