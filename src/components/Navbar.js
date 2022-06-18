@@ -18,7 +18,7 @@ const HeaderText = styled('h2')(({theme}) => ({
     fontWeight:'900',
     fontSize:'23px',
     [theme.breakpoints.down('md')]:{
-      fontWeight:'700',
+      fontWeight:'800',
       fontSize:'20px',
   },
 }))
